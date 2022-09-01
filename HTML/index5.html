@@ -5,71 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="StyleSheet" href="../CSS/style5.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Leiah Gonzalez</h1>
+    <header>
+        <img src="../Imagenes/logo.png" alt=" logo" class="logo"/>
+        <h2 class="titulo">COACHING</h2>
+        <h2 class="titulo2">BUSINESS</h2>
+        <nav class="navbar">
+            <ul class="lista">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index2.html">Qué es</a></li>
+                <li><a href="index3.html">Pasos</a></li>
+                <li><a href="index4.html">Casos Exitosos</a></li>
+                <li><a href="index5.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <table>
-        <tr>
-            <td>Nombre:</td>
-            <td>Coderhouse</td>
+    <div>
+        <h1 class="designthinking">DESIGN THINKING</h1>
+    </div>
 
-        </tr>
-    </table>
+    <div>
+        <h2 class="subtitulo">Contacto</h2>
+    </div>
 
-    <form>
-        <input type="text" placeholder="soy un texto"/>
-        <input type="submit" placeholder="enter"/>
-        <div>Correo electronico</div>
-        <input type="radio" name="contact" value="email"/>
-        <div>acepta terminos</div>
-        <input type="checkbox" name="acepta" value="1"/>
 
-        <label for="first name">nombre</label>
-        <input type="text" id="firstname" name="first name"/>
-    </form>
-
-    <form>
-        <fieldset>
-            <legend>Informacion personal</legend>
-            <label for="Gender"> Sexo: </label>
-            <div>
-                <input type="radio" name="gender" value="hombre"> hombre
-                <input type="radio" name="gender" value="mujer"> mujer
-            </div>
-            <br/>
+ 
+    <form class="container">
+        <fieldset class="formulario">
             <div>
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="fistname" name="firstname" placeholder="Nombre"/>
+                <input type="text" class="nombre" name="nombre" placeholder="Ingrese Nombre"/>
             </div>
+
             <br/>
-            <div>    
-                <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido" placeholder="apellido"/>
-            </div>
-            <br/>
+
             <div>
-                <label for="size">Talla:</label>
+                <label for="apellido">Apellido:</label>
+                <input type="text" class="apellido" name="apellido" placeholder="Ingrese Apellido"/>
+            </div>
+            
+            <br/>
+           
+            <div>
+                <label for="fecha nacimiento"> Fecha de Nacimiento:</label>
+                <input type="date" class="fechanac" name="fechanac"/>
+            </div>
+
+            <br/>
+            
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" class="email" name="email" placeholder="Ingrese Correo"/>
+            </div>
+
+            <br/>
+
+            <div>
+                <label for="telefono">Teléfono:</label>
+                <input type="text" class="telefono" name="telefono" placeholder="Ingrese Teléfono"/>
+            </div>
+
+            <br/>
+
+            <div>
+                <label for="size">Asunto:</label>
                 <select id="size" name="size">
-                    <option value="S">Small</option>
-                    <option value="M">Medium</option>
-                    <option value="L">Large</option>
+                    <option value="Corporativas">Capacitaciones Corporativas</option>
+                    <option value="Personal">Capacitaciones Personales</option>
+                    <option value="Otro">Otras Consultas</option>
 
                 </select>
             </div>
+            
+            <br/>
+
+            <div>
+                <label for="consulta">Consulta:</label>
+                <input type="text" class="texto" name="texto" placeholder="Ingrese Texto"/>
+            </div>
             <br/>
             <div>
-                <input type="submit" value="Enviar"/>
+                <input type="submit" value="Enviar" id="boton"/>
             </div>
         </fieldset>
     </form>
 
-    <div>
-        <iframe width="853" height="480" src="https://www.youtube.com/embed/5b6E2kDVjHg" title="5 TIPS super simples y rápidos de Google Sheets 👌" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div>
-        <img src="./coderhouse.jpg" alt="coder"/>
-    </div>
+    
+   
 
 </body>
 </html>
